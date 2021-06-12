@@ -6,8 +6,9 @@
   [& args]
   (println "Hello, World!"))
 
-;; First I need a mechanism to pull the input files from the net, thankfully Clojure has really easy ways to do this.
+;; First I need a mechanism to pull the input files from the disk, thankfully Clojure has really easy ways to do this. Right?
 
 (defn pull-input
   [input-number]
-  (slurp some-url))
+  (slurp (str "resources/day" input-number "input.txt")))
+
