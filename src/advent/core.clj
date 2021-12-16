@@ -5,9 +5,9 @@
             [advent.2021.2021 :as aoc2021]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
-  [& _args]
-  (println "Hello, World!"))
+  [& args]
+  (let [[year day & rest] args]
+    ))
 
 ;; First I need a mechanism to pull the input files from the disk, thankfully Clojure has really easy ways to do this. Right?
 
