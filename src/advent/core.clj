@@ -1,7 +1,8 @@
 (ns advent.core
   (:gen-class)
   (:require [clojure.string :as string] [clojure.math.combinatorics]
-            [advent.2020.2020]))
+            [advent.2020.2020 :as aoc2020]
+            [advent.2021.2021 :as aoc2021]))
 
 (defn -main
   "I don't do a whole lot ... yet."
