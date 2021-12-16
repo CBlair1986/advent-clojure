@@ -16,17 +16,6 @@
 
 (advent.2020.2020/day1-part1 (pull-input 1))
 
-(defn day1-part2
-  []
-  (let [input (pull-input 1)
-        lines (string/split-lines input)
-        nums (map #(Integer/parseInt %) lines)
-        triplets (clojure.math.combinatorics/combinations nums 3) ;; The main meat and potatoes here is the combinations function, how would I make this for myself?
-        sums (map #(vector (apply + %) %) triplets)
-        matches (filter #(= (first %) 2020) sums)
-        product (apply * (second (first matches)))]
-    product))
-
 (day1-part2)
 
 ;; Here we're parsing passwords
